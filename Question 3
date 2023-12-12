@@ -1,0 +1,6 @@
+message = input("say something")
+def convertion():
+  for i in message:
+    print(ord(i),end=",")
+
+convertion()
