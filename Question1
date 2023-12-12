@@ -4,18 +4,22 @@ import math
 #show the equation
 print("f(x)=ax^2+bx+c")
 
+def solution():
+
 #get values from user's input
-a = float(input("what is a"))
-b = float(input("what is b"))
-c = float(input("what is c"))
+  a = float(input("what is a"))
+  b = float(input("what is b"))
+  c = float(input("what is c"))
 
 #calculate the d
-d = float(math.sqrt(b**2-4*a*c))
-if d >= 0:
+  d = float(math.sqrt(b**2-4*a*c))
+  if d >= 0:
 #calculate the root
-root1 = (-b + d)/2*a
-root2 = (-b - d)/2*a
-print("root 1=",root1)
-print("root 2=",root)
-else:
-print("no real number root")
+    root1 = (-b + d)/2*a
+    root2 = (-b - d)/2*a
+    print("root 1=",root1)
+    print("root 2=",root)
+  else:
+    print("no real number root")
+
+solution()
